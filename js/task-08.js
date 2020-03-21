@@ -15,7 +15,7 @@ function createBoxes(amount) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  for (let i = 0; i <= amount; i += 1) {
+  for (let i = 1; i <= amount; i += 1) {
     let createbox = document.createElement('div');
     createbox.style.width = `${size + i * step}px`;
     createbox.style.height = `${size + i * step}px`;
